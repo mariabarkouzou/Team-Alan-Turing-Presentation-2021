@@ -24,7 +24,6 @@
   grid-area: img;
   /* object-fit: cover; */
   margin: 0;
-  max-width: none;
 }
 
 .slide .title {
@@ -103,7 +102,8 @@
 
 /* ?  //////   slide 4    */
 
-#slide4 {
+#slide4,
+#slide5 {
     grid-template-areas:
     'title title'
     'img code';
@@ -120,4 +120,5 @@
 
 .slide .img-gif {
     width: 300px;
+    max-width: none;
 }

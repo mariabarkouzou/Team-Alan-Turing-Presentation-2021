@@ -166,3 +166,42 @@
 #slide14 {
   display: block;
 }
+
+
+/* ?  //////   slide 15  */
+#slide15 {
+    grid-template-areas:
+    'title title'
+    'subtitle subtitle'
+    'img text'
+    'img code';
+  align-items: center;
+  column-gap: 1em;
+
+  width: 100%;
+  }
+
+#team-title {
+    text-transform: capitalize;
+}
+
+#slide15-subtitle {
+    grid-area: subtitle;
+    font-size: 3.3rem;
+}
+
+#slide15-img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.slide .name-list {
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.slide .name-list-item {
+    font-size: 2.5rem;
+    margin: .2em 0;
+}

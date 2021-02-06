@@ -100,10 +100,11 @@
     justify-self: center;
 }
 
-/* ?  //////   slide 4  + slide 5  */
+/* ?  //////   slide 4  + slide 5  + slide 7 */
 
 #slide4,
-#slide5 {
+#slide5,
+#slide7 {
     grid-template-areas:
     'title title'
     'img code';
@@ -134,4 +135,22 @@
     /* justify-self: center; */
     
     width: 95%;
+}
+
+
+/* ?  //////   slide 8  */
+
+#slide8 {
+    grid-template-areas:
+    'title title'
+    'img text'
+    'img code';
+    align-items: center;
+    /* justify-self: center; */
+    
+    width: 95%;
+}
+
+#slide8-img {
+    height: 500px;
 }

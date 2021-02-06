@@ -17,112 +17,121 @@
     <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
 
     <!-- Theme used for syntax highlighted code -->
-    <link
-      rel="stylesheet"
-      href="plugin/highlight/monokai.css"
-      id="highlight-theme"
-    />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
         <section>
-          <div class="slide1">
-            <img src="./images/slide1.jpg" alt="If Else Statement" />
-            <h1>Team Alan Turing Presents</h1>
-            <h2>Java<span class="letterS">S</span> cript</h2>
-            <h3>Conditional Statements</h3>
-            <p id="slide1p">&copy; 2021 Team Alan Turing</p>
+          <div class="slide slide1">
+            <img class="slide-img" src="./images/slide1.jpg" alt="If Else Statement" />
+            <h1 class="title">Team Alan Presents</h1>
+            <h2 id="js-text" class="subtitle">
+              <span class="letterS">J</span>ava<span class="letterS">S</span>cript
+            </h2>
+            <h3 class="topic">Conditional Statements</h3>
+            <!-- <p id="slide1p">&copy; 2021 Team Alan Turing</p> -->
           </div>
         </section>
 
         <section>
-          <div class="slide2">
+          <div class="slide slide2">
             <img
+              class="slide-img"
               src="./images/slide2.png"
               alt="Funny Image About The Contents Of A Book"
             />
-            <h1>Contents</h1>
-            <ul>
-              <li>The If Statement</li>
-              <li>The If Else Statement</li>
-              <li>The If Else If Statement</li>
-              <li>The Switch & Break Statement</li>
-              <li>Common Pitfalls</li>
-              <li>Sources</li>
+            <h1 class="title">Contents</h1>
+            <ul class="slide-list">
+              <li class="slide-item">The If Statement</li>
+              <li class="slide-item">The If Else Statement</li>
+              <li class="slide-item">The Else If Statement</li>
+              <li class="slide-item">The Switch Statement</li>
+              <li class="slide-item">Common Pitfalls</li>
+              <li class="slide-item">Sources</li>
             </ul>
           </div>
         </section>
 
         <section>
-          <div class="slide3">
-            <img src="./images/slide3.jpg" alt="Funny Cat Quotes" />
-            <h1>The If Statement</h1>
-            <h2>
-              Use the if statement to specify a block of JavaScript code to be
-              executed if a condition is true.
+          <div class="slide" id="slide3">
+            <img class="slide-img" src="./images/slide3.jpg" alt="Funny Cat Quotes" />
+            <h1 class="title">The If Statement</h1>
+            <h2 class="slide-text">
+              Use the if statement to specify a block of JavaScript code to be executed if a
+              condition is true.
             </h2>
 
-            <img src="./images/slide3code.png" alt="If Statement Code" />
+            <img class="slide-code" src="./images/slide3code.png" alt="If Statement Code" />
           </div>
         </section>
 
         <section>
-          <div class="slide4">
-            <img src="./images/slide4.gif" alt="Funny Dog Gif" />
-            <h1>An If Statement Example</h1>
-            <img src="./images/slide4code.png" alt="If Statement Code" />
-          </div>
-        </section>
-
-        <section>
-          <div class="slide5">
-            <img src="./images/slide5.jpg" alt="Funny Dog Image" />
-            <h1>Dog Needs Proof!</h1>
-            <img src="./images/slide5code.png" alt="If Statement Code" />
-          </div>
-        </section>
-
-        <section>
-          <div class="slide6">
-            <img src="./images/slide6.jpg" alt="Funny Dog And Cat" />
-            <h1>The If Else Statement</h1>
-            <h2>
-              Use the else statement to specify a block of code to be executed
-              if the condition is false.
-            </h2>
-            <img src="./images/slide6code.png" alt="If Else Statement Code" />
-          </div>
-        </section>
-
-        <section>
-          <div class="slide7">
-            <img src="./images/slide7.jpg" alt="Smiling Dog" />
-            <h1>An If Else Example</h1>
-            <img src="./images/slide7code.png" alt="If Else Statement Code" />
-          </div>
-        </section>
-
-        <section>
-          <div class="slide8">
-            <img src="./images/slide8.jpg" alt="Funny Cat and Dog Image" />
-            <h1>The If Else If Statement</h1>
-            <h2>
-              Use the else if statement to specify a new condition if the first
-              condition is false.
-            </h2>
+          <div class="slide" id="slide4">
+            <img class="slide-img img-gif" src="./images/slide4.gif" alt="Funny Dog Gif" />
+            <h1 class="title">An If Statement Example</h1>
             <img
-              src="./images/slide8code.png"
-              alt="If Else If Statement Code"
+              class="slide-code img-code"
+              src="./images/slide4code.png"
+              alt="If Statement Code"
             />
           </div>
         </section>
 
         <section>
-          <div class="slide9">
-            <img src="./images/slide9.png" alt="Funny Cat Image" />
-            <h1>An If Else If Example</h1>
+          <div class="slide" id="slide5">
+            <img class="slide-img img-gif" src="./images/slide5.jpg" alt="Funny Dog Image" />
+            <h1 class="title">Dog Needs Proof!</h1>
+            <img class="img-code" src="./images/slide5code.png" alt="If Statement Code" />
+          </div>
+        </section>
+
+        <section>
+          <div class="slide" id="slide6">
+            <img class="slide-img" src="./images/slide6.jpg" alt="Funny Dog And Cat" />
+            <h1 class="title">The If Else Statement</h1>
+            <h2 class="slide-text">
+              Use the else statement to specify a block of code to be executed if the condition is
+              false.
+            </h2>
+            <img class="slide-code" src="./images/slide6code.png" alt="If Else Statement Code" />
+          </div>
+        </section>
+
+        <section>
+          <div class="slide" id="slide7">
+            <img class="slide-img img-gif" src="./images/slide7.jpg" alt="Smiling Dog" />
+            <h1 class="title">An If Else Example</h1>
             <img
+              class="slide-code img-code"
+              src="./images/slide7code.png"
+              alt="If Else Statement Code"
+            />
+          </div>
+        </section>
+
+        <section>
+          <div class="slide" id="slide8">
+            <img
+              class="slide-img"
+              id="slide8-img"
+              src="./images/slide8.jpg"
+              alt="Funny Cat and Dog Image"
+            />
+            <h1 class="title">The Else If Statement</h1>
+            <h2 class="slide-text">
+              Use the else if statement to specify a new condition if the first condition is false.
+            </h2>
+            <img class="slide-code" src="./images/slide8code.png" alt="If Else If Statement Code" />
+          </div>
+        </section>
+
+        <section>
+          <div class="slide" id="slide9">
+            <img class="slide-img img-gif" src="./images/slide9.png" alt="Funny Cat Image" />
+            <h1 class="title">An Else If Example</h1>
+            <img
+              class="slide-code img-code"
               src="./images/slide9code.png"
               alt="If Else If Statement Code"
             />
@@ -130,14 +139,14 @@
         </section>
 
         <section>
-          <div class="slide10">
-            <img src="./images/slide10.png" alt="Dog Coding" />
-            <h1>The Switch & Break Statement</h1>
-            <h2>
-              Use the switch statement to select one of many code blocks to be
-              executed.
+          <div class="slide" id="slide10">
+            <img class="slide-img" src="./images/slide10.png" alt="Dog Coding" />
+            <h1 class="title">The Switch Statement</h1>
+            <h2 class="slide-text">
+              Use the switch statement to select one of many code blocks to be executed.
             </h2>
             <img
+              class="slide-code"
               src="./images/slide10code.png"
               alt="The Switch Statement Code"
             />
@@ -145,10 +154,11 @@
         </section>
 
         <section>
-          <div class="slide11">
-            <img src="./images/slide11.jpg" alt="A Cat With A Suitcase" />
-            <h1>A Switch & Break Statement Example</h1>
+          <div class="slide" id="slide11">
+            <img class="slide-img img-gif" src="./images/slide11.jpg" alt="A Cat With A Suitcase" />
+            <h1 class="title">A Switch Statement Example</h1>
             <img
+              class="slide-code img-code"
               src="./images/slide11code.png"
               alt="The Switch Statement Code"
             />
@@ -156,11 +166,11 @@
         </section>
 
         <section>
-          <div class="slide12">
-            <img src="./images/slide12.png" alt="Cat And Dog Coding" />
-            <h1>Common Pitfalls</h1>
-
+          <div class="slide" id="slide12">
+            <h1 class="title">Common Pitfalls</h1>
+            <h2>Human Code</h2>
             <img
+              class="slide-code img-code"
               src="./images/slide12code.png"
               alt="The Switch Statement Code"
             />
@@ -168,24 +178,37 @@
         </section>
 
         <section>
-          <div class="slide13">
-            <img src="./images/slide13.png" alt="Sources Funny Image" />
-            <h1>Sources</h1>
-            <p>www.w3schools.com</p>
+          <div class="slide" id="slide13">
+            <h1 class="title">Cat & Dog <em>VS</em> Human</h1>
+            <img class="slide-img img-gif" src="./images/slide12.png" alt="Cat And Dog Coding" />
+          
+            <!-- Correct code block to be added by Maria-->
+          
           </div>
         </section>
 
         <section>
-          <div class="slide14">
-            <img src="./images/alan1.jpg" alt="Alan Turing" />
-            <h1>The Members Of Team Alan Turing</h1>
-            <h2>In Alphabetical Order</h2>
-            <p>Aivaliotis Nikos</p>
-            <p>Barkouzou Maria</p>
-            <p>Gibba Ansu</p>
-            <p>Hatzichristos Gogi Alexandros</p>
-            <p>Jetsapel Saw</p>
-            <p>Sastre Pagonis Andreas</p>
+          <div class="slide" id="slide14">
+            <h1 class="title">Sources</h1>
+            <img class="slide-img" src="./images/slide13.png" alt="Sources Funny Image" />
+            <p>https://www.w3schools.com</p>
+            <p>https://developer.mozilla.org</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="slide" id="slide15">
+            <img class="slide-img" id="slide15-img" src="./images/alan1.jpg" alt="Alan Turing" />
+            <h1 class="title" id="team-title">Dec2020 Team Alan</h1>
+            <h2 id="slide15-subtitle" class="subtitle">In Alphabetical Order</h2>
+            <ul class="name-list slide-text">
+              <li class="name-list-item">Aivaliotis Nikos</li>
+              <li class="name-list-item">Barkouzou Maria</li>
+              <li class="name-list-item">Gibba Ansu</li>
+              <li class="name-list-item">Hatzichristos Gogi A.</li>
+              <li class="name-list-item">Jetsapel Saw</li>
+              <li class="name-list-item">Sastre Pagonis Andreas</li>
+            </ul>            
           </div>
         </section>
       </div>
@@ -204,7 +227,7 @@
 
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-      });
+      })
     </script>
   </body>
 </html>

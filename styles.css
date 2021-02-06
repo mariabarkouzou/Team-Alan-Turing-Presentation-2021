@@ -100,11 +100,12 @@
     justify-self: center;
 }
 
-/* ?  //////   slide 4  + slide 5  + slide 7 */
+/* ?  //////   slide 4  + slide 5  + slide 7  +  slide 9  */
 
 #slide4,
 #slide5,
-#slide7 {
+#slide7, 
+#slide9 {
     grid-template-areas:
     'title title'
     'img code';

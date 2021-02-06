@@ -8,7 +8,6 @@
     'title title'
     'img text'
     'img text';
-  /* 'img text'; */
   width: 90%;
   margin: 0 auto;
 
@@ -38,34 +37,28 @@
   /* font-family: 'Courier New', Courier, monospace; */
   font-size: 4rem;
   text-transform: capitalize;
-  margin: 0;
-  color: #191919;
-  padding: 0 .3em;
-  background-color: #f5eb51;
-  border-radius: 20px;
+
 }
 
-.slide .topic {
+
+/* ?  //////   slide 1    */
+#js-text{
+    margin: 0;
+    color: #191919;
+    padding: 0 .3em;
+    background-color: #f5eb51;
+    border-radius: 20px;
+}
+
+
+#topic {
   /* font-size: 4rem; */
   text-transform: capitalize;
 }
 
-/* ! will probably be deleted from html as well */
-/* .slide .topic {
-    font-size: 3rem;
-} */
-
 .letterS {
   font-size: 6rem;
 }
-
-/* .letterS:first-child {
-  color: yellow;
-}
-
-.letterS:last-child {
-  color: blue;
-} */
 
 /* ? //////  slide 2 */
 .slide-list {
@@ -76,4 +69,33 @@
 .slide-item {
     font-size: 2.3rem;
     margin: .7em 0;
+}
+
+/* ?  //////   slide 3    */
+
+#slide3 {
+    grid-template-areas:
+    'title title'
+    'img text'
+    'code code';
+    align-items: center;
+    justify-self: center;
+    
+    width: 95%;
+}
+
+.slide .slide-text {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    text-transform: unset;
+    text-align: left;
+    align-self: center;
+    justify-self: center;
+    margin: 0 .5em;
+}
+
+.slide .slide-code {
+    grid-area: code;
+    align-self: center;
+    justify-self: center;
 }

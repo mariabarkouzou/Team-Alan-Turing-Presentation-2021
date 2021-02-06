@@ -1,0 +1,73 @@
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* align-items: center; */
+  grid-template-areas:
+    'title title'
+    'img text'
+    'img text';
+  /* 'img text'; */
+  width: 90%;
+  margin: 0 auto;
+
+  /* background-color: red; */
+}
+
+.slide .slide-img,
+.slide .subtitle {
+  align-self: center;
+  justify-self: center;
+}
+
+.slide .slide-img {
+  grid-area: img;
+  object-fit: cover;
+  margin: 0;
+}
+
+.slide .title {
+  font-size: 5.5rem;
+  grid-area: title;
+  color: #caaa74;
+  color: #ecc793;
+}
+
+.slide .subtitle {
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin: 0;
+  color: #191919;
+  padding: 0 .3em;
+  background-color: #f5eb51;
+  border-radius: 20px;
+}
+
+.slide .topic {
+  /* font-size: 4rem; */
+  text-transform: capitalize;
+}
+
+/* ! will probably be deleted from html as well */
+/* .slide .topic {
+    font-size: 3rem;
+} */
+
+.letterS {
+  font-size: 6rem;
+}
+
+/* .letterS:first-child {
+  color: yellow;
+}
+
+.letterS:last-child {
+  color: blue;
+} */
+
+
+.slide-item {
+    font-size: 2.5rem;
+}

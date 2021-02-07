@@ -8,7 +8,7 @@
     'title title'
     'img text'
     'img text';
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 
   /* background-color: red; */
@@ -27,7 +27,7 @@
 }
 
 .slide .title {
-  font-size: 5.2rem;
+  font-size: 4.5rem;
   grid-area: title;
   color: #caaa74;
   color: #ecc793;
@@ -40,6 +40,10 @@
 }
 
 /* ?  //////   slide 1    */
+#main-title {
+  font-size: 5.2rem;
+}
+
 #js-text {
   margin: 0;
   color: #191919;
@@ -58,14 +62,19 @@
 }
 
 /* ? //////  slide 2 */
+
+#slide2 {
+  width: 80%;
+}
+
 .slide-list {
   align-self: center;
   justify-self: center;
 }
 
 .slide-item {
-  font-size: 2.3rem;
-  margin: 0.7em 0;
+  font-size: 1.8rem;
+  margin: 0.6em 0;
 }
 
 /* ?  //////   slide 3  +  slide 10  */
@@ -82,20 +91,26 @@
   width: 95%;
 }
 
+#slide3 {
+  width: 70%;
+}
+
 .slide .slide-text {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   text-transform: unset;
   text-align: left;
   align-self: center;
   justify-self: center;
-  margin: 0 0.5em;
+  /* margin: 0 0.5em; */
+  padding-right: 1em;
 }
 
 .slide .slide-code {
   grid-area: code;
   align-self: center;
   justify-self: center;
+  margin: 0;
 }
 
 /* ?  //////   slide 4  + slide 5  + slide 7  +  slide 9  +  slide 11  */
@@ -109,8 +124,8 @@
     'title title'
     'img code';
   align-items: center;
-  column-gap: 1em;
-  width: 95%;
+  /* column-gap: 1em; */
+  /* width: 95%; */
 }
 
 .slide .img-code {
@@ -124,6 +139,22 @@
   max-width: none;
 }
 
+#slide4 .img-code {
+  width: 400px;
+}
+
+#slide5 .img-code {
+  /* width: 100%; */
+  object-fit: cover;
+  height: 300px;
+  width: 480px;
+}
+
+#slide5 .img-gif {
+  height: 300px;
+  object-fit: contain;
+}
+
 /* ?  //////   slide 6  */
 
 #slide6 {
@@ -134,7 +165,7 @@
   align-items: center;
   /* justify-self: center; */
 
-  width: 95%;
+  /* width: 95%; */
 }
 
 /* ?  //////   slide 8  */
@@ -167,10 +198,9 @@
   display: block;
 }
 
-
 /* ?  //////   slide 15  */
 #slide15 {
-    grid-template-areas:
+  grid-template-areas:
     'title title'
     'subtitle subtitle'
     'img text'
@@ -179,29 +209,29 @@
   column-gap: 1em;
 
   width: 100%;
-  }
+}
 
 #team-title {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 #slide15-subtitle {
-    grid-area: subtitle;
-    font-size: 3.3rem;
+  grid-area: subtitle;
+  font-size: 3.3rem;
 }
 
 #slide15-img {
-    object-fit: cover;
-    height: 400px;
+  object-fit: cover;
+  height: 400px;
 }
 
 .slide .name-list {
-    justify-content: center;
-    align-self: center;
-    justify-self: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
 }
 
 .slide .name-list-item {
-    font-size: 2.5rem;
-    margin: .2em 0;
+  font-size: 2.5rem;
+  margin: 0.2em 0;
 }

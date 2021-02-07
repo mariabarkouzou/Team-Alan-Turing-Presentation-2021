@@ -311,9 +311,52 @@
   width: 400px;
 }
 
-/* ?  //////   slide 15  */
+/* ?  //////   slide 14  */
+#slide14 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+                        'title title title'
+                        'img1 img2 img3'
+                        'img4 img5 img6'
+                        ;
+  width: 70%;
+}
+
+#slide14-img-1 {grid-area: img1;}
+#slide14-img-2 {grid-area: img2;}
+#slide14-img-3 {grid-area: img3;}
+#slide14-img-4 {grid-area: img4;}
+#slide14-img-5 {grid-area: img5;}
+#slide14-img-6 {grid-area: img6;}
+
+#slide14 .slide-code {
+  width: 220px;
+  height: 270px;
+  object-fit: contain;
+}
+
+/* ?  //////  slide 14-2  +   slide 15  */
+#slide14-2,
 #slide15 {
   display: block;
+}
+
+#slide14-2 .slide-code {
+  width: 600px;
+  height: 350px;
+  object-fit: contain;
+}
+
+#slide15 .slide-img {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+}
+
+#slide15 .slide-text {
+  text-align: center;
+  margin: 0;
 }
 
 /* ?  //////   slide 16  */

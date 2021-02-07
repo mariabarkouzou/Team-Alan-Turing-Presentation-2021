@@ -160,12 +160,26 @@
 #slide6 {
   grid-template-areas:
     'title title'
-    'img text'
-    'code code';
+    'img img'
+    'text code';
   align-items: center;
   /* justify-self: center; */
 
   /* width: 95%; */
+}
+
+#slide6 .slide-text {
+  padding: 1em 2em;
+}
+
+#slide6 .slide-img {
+  width: 45%;
+ }
+#slide6 .slide-code {
+  /* width: 350px; */
+  width: 100%;
+  /* height: 300px; */
+  object-fit: contain;
 }
 
 /* ?  //////   slide 8  */

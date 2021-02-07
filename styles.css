@@ -311,13 +311,13 @@
   width: 400px;
 }
 
-/* ?  //////   slide 14  */
-#slide14 {
+/* ?  //////   slide 15  */
+#slide15 {
   display: block;
 }
 
-/* ?  //////   slide 15  */
-#slide15 {
+/* ?  //////   slide 16  */
+#slide16 {
   grid-template-areas:
     'title title'
     'subtitle subtitle'
@@ -333,23 +333,23 @@
   text-transform: capitalize;
 }
 
-#slide15-subtitle {
+#slide16-subtitle {
   grid-area: subtitle;
   font-size: 3.3rem;
 }
 
-#slide15-img {
+#slide16-img {
   object-fit: cover;
   height: 400px;
 }
 
-.slide .name-list {
+#slide16 .name-list {
   justify-content: center;
   align-self: center;
   justify-self: center;
 }
 
-.slide .name-list-item {
+#slide16 .name-list-item {
   font-size: 2.5rem;
   margin: 0.2em 0;
 }

@@ -80,81 +80,80 @@
   border-radius: 20px;
 }
 
-#topic {
+#presentation-subject {
   /* font-size: 4rem; */
   text-transform: capitalize;
 }
 
-.letterS {
+.js-letters {
   font-size: 6rem;
 }
 
 /* ? //////  slide 2 */
 
-#slide2 {
+#contents {
   width: 85%;
-  margin: 0 auto;
 }
 
-.slide .slide-list {
+#contents .slide-img {
+  justify-self: end;
+}
+
+#contents .contents-list {
   align-self: center;
-  justify-self: start;
+  justify-self: center;
+  margin: 0;
 }
 
-.slide-item {
-  font-size: 1.8rem;
-  margin: 0.6em 0;
+#contents .contents-item {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 0.7em 0;
 }
 
 /* ?  //////   slide 3   */
 
-#slide3 {
+#if-statement {
   display: block;
   /* width: 70%; */
 }
 
-#slide3 .slide-img {
+#if-statement .slide-img {
   width: 50%;
 }
 
 /* ?  //////   slide 3-2   +  slide 6-2  */
 
-#slide3-2,
-#slide6-2,
-#slide8-2 {
+#if-statement-2,
+#if-else-statement-2,
+#else-if-statement-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#slide3-2 .slide-text,
-#slide6-2 .slide-text,
-#slide8-2 .slide-text {
+#if-statement-2 .slide-text,
+#if-else-statement-2 .slide-text,
+#else-if-statement-2 .slide-text {
   padding: 0 1em;
   font-size: 1.5rem;
   text-align: center;
 }
 
-/* #slide3-2 .slide-code,
-#slide6-2 .slide-code,
-#slide8-2 .slide-code {
-  margin-bottom: 0.5em;
-} */
-
-#slide3-2,
-#slide8-2 {
+#if-statement-2,
+#else-if-statement-2 {
   width: 70%;
 }
 
-#slide6-2 {
+#if-else-statement-2 {
   width: 60%;
 }
 
 /* ?  //////   slide 4  + slide 5   */
 
-#slide4,
-#slide5 {
+#if-statement-example,
+#dog-needs-proof {
   grid-template-areas:
     'title title'
     'img code';
@@ -174,25 +173,25 @@
   max-width: none;
 }
 
-#slide4 .img-code {
+#if-statement-example .img-code {
   width: 400px;
 }
 
-#slide5 .img-code {
+#dog-needs-proof .img-code {
   /* width: 100%; */
   object-fit: cover;
   height: 300px;
   width: 480px;
 }
 
-#slide5 .img-gif {
+#dog-needs-proof .img-gif {
   height: 300px;
   object-fit: contain;
 }
 
 /* ?  //////   slide 6  */
 
-#slide6 {
+#if-else-statement {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,57 +201,41 @@
   margin: 0 auto;
 }
 
-/* #slide6 .slide-text {
-  padding: 1em 2em;
-}
-
-#slide6 .slide-img {
-  /* width: 45%; */
-/* margin: 0 auto; */
-/* } */
-
-/* #slide6 .slide-code {
-  width: 350px;
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-}  */
-
 /* ?  //////   slide 7 , 9 , 9-2 , 10 , 10-2 , 11 */
 
-#slide7,
-#slide9,
-#slide9-2,
-#slide10,
-#slide10-2,
+#if-else-example,
+#else-if-example,
+#else-if-example-2,
+#switch-statement,
+#switch-statement-2,
 #switch-example,
-#switch-example-code {
+#switch-example-2 {
   display: block;
 }
 
-#slide7 .img-gif {
+#if-else-example .img-gif {
   height: 250px;
   object-fit: cover;
   margin: 0;
 }
 
-#slide7 .slide-code {
+#if-else-example .slide-code {
   width: 60%;
 }
 
-#slide10 {
+#switch-statement {
   width: 70%;
 }
 
-#slide10 .slide-img {
+#switch-statement .slide-img {
   width: 80%;
 }
 
-#slide10-2 .slide-code {
+#switch-statement-2 .slide-code {
   width: 35%;
 }
 
-#slide10-2 .slide-text {
+#switch-statement-2 .slide-text {
   font-size: 1.5rem;
   width: 50%;
   margin: 0 auto;
@@ -276,40 +259,40 @@
 
 /* ?  //////   slide 8  */
 
-#slide8 {
+#else-if-statement {
   display: block;
   width: 95%;
 }
 
-#slide8-img {
+#else-if-statement-img {
   /* object-fit: contain; */
   width: 270px;
 }
 
-#slide8 .slide-text {
+#else-if-statement .slide-text {
   padding: 0 2em;
 }
 
-#slide8 .slide-code {
+#else-if-statement .slide-code {
   height: 85%;
   width: 90%;
   object-fit: cover;
 }
 
-#slide8-2 {
+#else-if-statement-2 {
   display: block;
 }
 
 /* ?  //////   slide 12  + #slide 13 */
 
-#slide12,
+#common-pitfalls,
 #cat-dog-vs-human,
 #cat-dog-vs-human-2 {
   display: block;
   align-items: center;
 }
 
-#slide12 .subtitle {
+#common-pitfalls .subtitle {
   font-size: 3rem;
 }
 
@@ -336,7 +319,7 @@
 
 /* ?  //////  ternary operator quiz   */
 #ternary-operator-quiz,
-#slide15 {
+#sources {
   display: block;
 }
 
@@ -346,19 +329,19 @@
   object-fit: contain;
 }
 
-#slide15 .slide-img {
+#sources .slide-img {
   width: 400px;
   height: 300px;
   object-fit: contain;
 }
 
-#slide15 .slide-text {
+#sources .slide-text {
   text-align: center;
   margin: 0;
 }
 
 /* ?  //////   slide 16  */
-#slide16 {
+#team-alan {
   grid-template-areas:
     'title title'
     'subtitle subtitle'
@@ -370,27 +353,27 @@
   width: 100%;
 }
 
-#team-title {
+#team-alan-title {
   text-transform: capitalize;
 }
 
-#slide16-subtitle {
+#team-alan-subtitle {
   grid-area: subtitle;
   font-size: 3.3rem;
 }
 
-#slide16-img {
+#team-alan-img {
   object-fit: cover;
   height: 400px;
 }
 
-#slide16 .name-list {
+#team-alan .name-list {
   justify-content: center;
   align-self: center;
   justify-self: center;
 }
 
-#slide16 .name-list-item {
+#team-alan .name-list-item {
   font-size: 2.5rem;
   margin: 0.2em 0;
 }

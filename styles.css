@@ -62,11 +62,14 @@
   align-self: center;
   justify-self: center;
   margin: 0;
-  max-width: none;
   object-fit: cover;
 }
 
-/* ?      Intro Slide     */
+/* ?      Cover Slide     */
+#cover-slide {
+  width: 80%;
+}
+
 #main-title {
   font-size: 5.2rem;
   text-transform: capitalize;
@@ -88,7 +91,7 @@
   font-size: 6rem;
 }
 
-/* ?      Contents     */
+/* ?                  Contents              */
 
 #contents {
   width: 85%;
@@ -115,6 +118,7 @@
   width: 50%;
 }
 
+
 /* ?           if-statement-2  +  if-else-statement-2  +  else-if-statement-2    */
 
 #if-statement-2,
@@ -131,12 +135,14 @@
 #if-else-statement-2 .slide-text,
 #else-if-statement-2 .slide-text {
   padding: 0 1em;
+  margin-top: 1em;
   font-size: 1.5rem;
   text-align: center;
 }
 
 #if-statement-2,
-#else-if-statement-2 {
+#else-if-statement-2,
+#else-if-example-2 {
   width: 70%;
 }
 
@@ -157,9 +163,7 @@
 
 #if-statement-example .slide-code {
   width: 400px;
-  justify-self: center;
   max-width: none;
-  object-fit: cover;
 }
 
 #dog-needs-proof .slide-code {
@@ -174,6 +178,7 @@
   height: 300px;
   object-fit: contain;
 }
+
 
 /* ?       if-else-statement      */
 
@@ -211,6 +216,7 @@
   font-size: 1.5rem;
   width: 50%;
   text-align: center;
+  margin: 0 auto;
 }
 
 /* ?          switch-example       */
@@ -226,6 +232,10 @@
   object-fit: contain;
 }
 
+#switch-example-2 .slide-code {
+  width: 70%;
+}
+
 /* ?      else-if-statement       */
 
 #else-if-statement {
@@ -236,26 +246,15 @@
   width: 270px;
 }
 
-#else-if-statement .slide-text {
-  padding: 0 2em;
-}
-
-#else-if-statement .slide-code {
-  height: 85%;
-  width: 90%;
-  object-fit: cover;
-}
-
 /* ?       Common Pitfalls   +   cat-dog-vs-human      */
 
-#common-pitfalls,
-#cat-dog-vs-human,
-#cat-dog-vs-human-2 {
-  align-items: center;
+#common-pitfalls .subtitle {
+  font-size: 2.3rem;
+  font-weight: 400;
 }
 
-#common-pitfalls .subtitle {
-  font-size: 3rem;
+#common-pitfalls .slide-code {
+  width: 70%;
 }
 
 #cat-dog-vs-human .slide-img,
@@ -263,21 +262,7 @@
   width: 600px;
 }
 
-/* ?       Ternary Operator slides     */
-#ternary-operator .slide-code {
-  width: 220px;
-  height: 270px;
-  object-fit: contain;
-}
-
-/* ?        Ternary Operator quiz       */
-
-#ternary-operator-quiz .slide-code {
-  width: 600px;
-  height: 350px;
-  object-fit: contain;
-}
-
+/* ?          Sources          */
 #sources .slide-img {
   width: 400px;
   height: 300px;

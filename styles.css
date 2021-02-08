@@ -1,35 +1,23 @@
-.slide {
+/* ?    general styles       */
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* align-items: center; */
   grid-template-areas:
     'title title'
     'img text'
     'img text';
-  /* width: 90%; */
   margin: 0 auto;
+}
 
-  /* background-color: red; */
+.margin-0-auto {
+  margin: 0 auto;
 }
 
 .slide .slide-img,
 .slide .subtitle {
   align-self: center;
   justify-self: center;
-}
-
-.slide .slide-img {
-  grid-area: img;
-  /* object-fit: cover; */
-  margin: 0;
-  /* margin-bottom: 1em; */
-}
-
-.slide .slide-code,
-.slide .img-code {
-  border-radius: 10px;
 }
 
 .slide .title {
@@ -41,10 +29,8 @@
 }
 
 .slide .subtitle {
-  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 4rem;
   text-transform: capitalize;
-  /* font-weight: 400; */
 }
 
 .slide .slide-text {
@@ -55,18 +41,32 @@
   text-align: left;
   align-self: center;
   justify-self: center;
-  /* margin: 0 0.5em; */
   padding-right: 1em;
+}
+
+.slide .slide-img {
+  grid-area: img;
+  margin: 0;
+}
+
+/* !          NEED TO GET RID OF .img-gif !!!!                */
+/* !          need to fix image sizes in several slides       */
+.slide .img-gif {
+  width: 300px;
+  max-width: none;
 }
 
 .slide .slide-code {
   grid-area: code;
+  border-radius: 10px;
   align-self: center;
   justify-self: center;
   margin: 0;
+  max-width: none;
+  object-fit: cover;
 }
 
-/* ?  //////   slide 1    */
+/* ?      Intro Slide     */
 #main-title {
   font-size: 5.2rem;
   text-transform: capitalize;
@@ -81,7 +81,6 @@
 }
 
 #presentation-subject {
-  /* font-size: 4rem; */
   text-transform: capitalize;
 }
 
@@ -89,7 +88,7 @@
   font-size: 6rem;
 }
 
-/* ? //////  slide 2 */
+/* ?      Contents     */
 
 #contents {
   width: 85%;
@@ -111,20 +110,15 @@
   margin: 0.7em 0;
 }
 
-/* ?  //////   slide 3   */
-
-#if-statement {
-  display: block;
-  /* width: 70%; */
-}
-
+/* ?            if-statement             */
 #if-statement .slide-img {
   width: 50%;
 }
 
-/* ?  //////   slide 3-2   +  slide 6-2  */
+/* ?           if-statement-2  +  if-else-statement-2  +  else-if-statement-2    */
 
 #if-statement-2,
+#if-else-statement,
 #if-else-statement-2,
 #else-if-statement-2 {
   display: flex;
@@ -150,7 +144,7 @@
   width: 60%;
 }
 
-/* ?  //////   slide 4  + slide 5   */
+/* ?         if-statement-example    +    dog-needs-proof       */
 
 #if-statement-example,
 #dog-needs-proof {
@@ -158,30 +152,22 @@
     'title title'
     'img code';
   align-items: center;
-  /* column-gap: 1em; */
   width: 80%;
 }
 
-.slide .img-code {
+#if-statement-example .slide-code {
+  width: 400px;
   justify-self: center;
   max-width: none;
-  width: 550px;
+  object-fit: cover;
 }
 
-.slide .img-gif {
-  width: 300px;
+#dog-needs-proof .slide-code {
+  justify-self: center;
   max-width: none;
-}
-
-#if-statement-example .img-code {
-  width: 400px;
-}
-
-#dog-needs-proof .img-code {
-  /* width: 100%; */
   object-fit: cover;
   height: 300px;
-  width: 480px;
+  width: 470px;
 }
 
 #dog-needs-proof .img-gif {
@@ -189,29 +175,13 @@
   object-fit: contain;
 }
 
-/* ?  //////   slide 6  */
+/* ?       if-else-statement      */
 
 #if-else-statement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   width: 60%;
-  margin: 0 auto;
 }
 
-/* ?  //////   slide 7 , 9 , 9-2 , 10 , 10-2 , 11 */
-
-#if-else-example,
-#else-if-example,
-#else-if-example-2,
-#switch-statement,
-#switch-statement-2,
-#switch-example,
-#switch-example-2 {
-  display: block;
-}
+/* ?       if-else-example     */
 
 #if-else-example .img-gif {
   height: 250px;
@@ -222,6 +192,8 @@
 #if-else-example .slide-code {
   width: 60%;
 }
+
+/* ?        switch-statement      */
 
 #switch-statement {
   width: 70%;
@@ -238,13 +210,10 @@
 #switch-statement-2 .slide-text {
   font-size: 1.5rem;
   width: 50%;
-  margin: 0 auto;
   text-align: center;
 }
 
-/* #slide11-section {
-  top: 50px;
-} */
+/* ?          switch-example       */
 
 #switch-example .title {
   font-size: 4rem;
@@ -257,15 +226,13 @@
   object-fit: contain;
 }
 
-/* ?  //////   slide 8  */
+/* ?      else-if-statement       */
 
 #else-if-statement {
-  display: block;
   width: 95%;
 }
 
 #else-if-statement-img {
-  /* object-fit: contain; */
   width: 270px;
 }
 
@@ -279,16 +246,11 @@
   object-fit: cover;
 }
 
-#else-if-statement-2 {
-  display: block;
-}
-
-/* ?  //////   slide 12  + #slide 13 */
+/* ?       Common Pitfalls   +   cat-dog-vs-human      */
 
 #common-pitfalls,
 #cat-dog-vs-human,
 #cat-dog-vs-human-2 {
-  display: block;
   align-items: center;
 }
 
@@ -301,27 +263,14 @@
   width: 600px;
 }
 
-/* ?  //////   ternary operator slides */
-#ternary-operator-1,
-#ternary-operator-2,
-#ternary-operator-3,
-#ternary-operator-4,
-#ternary-operator-5,
-#ternary-operator-6 {
-  display: block;
-}
-
+/* ?       Ternary Operator slides     */
 #ternary-operator .slide-code {
   width: 220px;
   height: 270px;
   object-fit: contain;
 }
 
-/* ?  //////  ternary operator quiz   */
-#ternary-operator-quiz,
-#sources {
-  display: block;
-}
+/* ?        Ternary Operator quiz       */
 
 #ternary-operator-quiz .slide-code {
   width: 600px;
@@ -340,7 +289,7 @@
   margin: 0;
 }
 
-/* ?  //////   slide 16  */
+/* ?       Team Alan - Final slide      */
 #team-alan {
   grid-template-areas:
     'title title'
